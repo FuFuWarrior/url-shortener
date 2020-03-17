@@ -1,0 +1,22 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "An app to shorten your url",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "FuFu-Warrior",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "dot-env": "0.0.1",
+    "dotenv": "^8.2.0"
+  }
+}
