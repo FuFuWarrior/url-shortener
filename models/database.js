@@ -1,5 +1,4 @@
 const {Pool} = require('pg')
-require('dotenv').config();
 
 // connection config
 const pool = new Pool({
@@ -7,7 +6,8 @@ const pool = new Pool({
     password : process.env.PG_PW,
     host : process.env.PG_HOST,
     port :  process.env.PG_PORT,
-    database : process.env.PG_DATABASE
+    database : process.env.PG_DATABASE,
+    // ssl: true
 });
 
 pool.on('connect',() => console.log('working'))

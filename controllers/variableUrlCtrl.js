@@ -10,14 +10,12 @@ exports.variableUrl = (req,res) => {
     {
         return res.sendStatus(404);
     }
-    console.log(result.rows[0].clicks);
+    
     let newCount = result.rows[0].clicks + 1;
-    console.log(newCount);
     const id = result.rows[0].url_id;
-    console.log(id); 
     pool.query('UPDATE URLS SET clicks=$1 where url_id=$2', [newCount,id])
     res.redirect(result.rows[0].full_url)
     })
-    
-    // 
+
+    //
 }

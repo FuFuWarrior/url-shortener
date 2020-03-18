@@ -18,21 +18,22 @@
 
     <table class="table table-striped table responsive">
         <thead>
-           
+
             <tr>
                 <th>Full URL</th>
                 <th>Short URL</th>
                 <th>Clicks</th>
             </tr>
         </thead>
-        <tbody>                       
-             <% shortUrls.forEach( (shortUrl) => { %> 
+        <tbody>
+             <% shortUrls.forEach( (shortUrl) => { %>
                 <tr>
-                    <td><a href="<%= shortUrl.full_url %>"> <%= shortUrl.full_url %></a></td>
-                    <td><a href="<%= shortUrl.short_url %>"><%= shortUrl.short_url %></a></td>
-                    <td><a href="<%= shortUrl.clicks %>"><%= shortUrl.clicks %></a></td>
+                    <td><%= shortUrl.full_url %></td>
+                    <td><a href="<%= shortUrl.short_url %>" target = "_blank"><%= shortUrl.short_url %></a></td>
+                    <td><%= shortUrl.clicks %></td>
+                    <td><a href="<%= shortUrl.clicks %>"></a></td>
                 </tr>
-            <% }) %>  
+            <% }) %>
         </tbody>
     </table>
     </div>
