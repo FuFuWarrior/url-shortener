@@ -12,7 +12,7 @@
     <h1>URL Shrinkner</h1>
     <form action="/shortUrls " method="POST" class="my-4 form-inline">
         <label for="fullUrl" class="sr-only">Full URL</label>
-        <input type="url" id="fullUrl" name="fullUrl"placeholder="Url" class="form-control col mr-2"  required >
+        <input type="url" id="fullUrl" name="fullUrl" value="https://" class="form-control col mr-2"  required >
         <button type="submit" class="btn btn-success">Shrink</button>
     </form>
 
@@ -30,7 +30,7 @@
                 <tr>
                     <td><%= shortUrl.full_url %></td>
                     <td><a href="<%= shortUrl.short_url %>" target = "_blank"><%= shortUrl.short_url %></a></td>
-                    <td><%= shortUrl.clicks %></td>
+                    <td><%= shortUrl.cks %></td>
                     <td><a href="<%= shortUrl.clicks %>"></a></td>
                 </tr>
             <% }) %>
