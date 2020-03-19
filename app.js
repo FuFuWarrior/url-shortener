@@ -13,12 +13,12 @@ app.use(express.json());
 
 const {urls} = database;
 
-const loadTables = async () => {
-    await urls()
-    .then(() => console.log('completed'))
-    .catch((e) => console.log(e))
-}
-loadTables()
+// const loadTables = async () => {
+//     await urls()
+//     .then(() => console.log('completed'))
+//     .catch((e) => console.log(e))
+// }
+// loadTables()
 
 app.use(getAllUrlsRoute)
 app.use(formAllUrlRoute)
