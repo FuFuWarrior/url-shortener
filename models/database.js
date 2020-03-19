@@ -24,4 +24,4 @@ pool.on('connect',() => console.log('working'))
 //   };
 
 
-  module.exports = {pool,urls}
+  module.exports = {pool}
