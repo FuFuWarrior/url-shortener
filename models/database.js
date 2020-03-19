@@ -1,4 +1,5 @@
 const {Pool} = require('pg')
+
 // connection config
 const pool = new Pool({
     user : process.env.PG_USER,
